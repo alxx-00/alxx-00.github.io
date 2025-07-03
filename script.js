@@ -1,21 +1,15 @@
- // Toggle modo oscuro
-document.getElementById("modo").addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-});
-
-// Validación de formulario de citas
-document.getElementById("citaForm").addEventListener("submit", function (e) {
-  const nombre = document.getElementById("nombre").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const fecha = document.getElementById("fecha").value;
-  const hora = document.getElementById("hora").value;
-  const detalle = document.getElementById("detalle").value.trim();
-
-  if (!nombre || !email || !fecha || !hora || !detalle) {
-    alert("Por favor, completa todos los campos.");
-    e.preventDefault();
-    return;
-  }
-
-  alert("Tu cita ha sido registrada. ¡Gracias por confiar en nosotros!");
+document.addEventListener("DOMContentLoaded", () => {
+  const forms = ["clienteForm", "vehiculoForm", "citaForm"];
+  forms.forEach(id => {
+    const form = document.getElementById(id);
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      if (form.checkValidity()) {
+        alert("Formulario enviado correctamente.");
+        form.reset();
+      } else {
+        alert("Por favor, completa todos los campos correctamente.");
+      }
+    });
+  });
 });
