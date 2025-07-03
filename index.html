@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taller romosports</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://romosport.com/wp-content/uploads/2024/04/cropped-Logotipo-romosport.png" alt="Logo del Taller" /><svg width="10" height="10" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <rect width="64" height="64" rx="12" fill="#007bff"/>
+  <path d="M42 26l-4-4 4-4M22 38l4 4-4 4M38 22l-16 20" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="30" stroke="#fff" stroke-width="2"/>
+</svg>
+
+        <span>rapidez y seguridad</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#citas">Citas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button id="modo">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Confianza y profesionalismo para tu auto</h1>
+      <p>Mecánica general, diagnóstico electrónico, y más.</p>
+      <a href="#servicios" class="btn">Conoce nuestros servicios</a>
+    </div>
+  </section>
+
+  <section id="servicios" class="servicios">
+    <h2>Servicios</h2>
+    <div class="grid">
+      <div class="card"><i class="fas fa-oil-can"></i><h3>Cambio de aceite</h3></div>
+      <div class="card"><i class="fas fa-car-battery"></i><h3>chequeo de Baterías</h3></div>
+      <div class="card"><i class="fas fa-car-crash"></i><h3>Frenos</h3></div>
+      <div class="card"><i class="fas fa-tools"></i><h3>Mecánica general</h3></div>
+      <div class="card"><i class="fas fa-fan"></i><h3>Aire acondicionado</h3></div>
+      <div class="card"><i class="fas fa-wrench"></i><h3>Suspensión</h3></div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="info">
+    <h2>¿Quiénes somos?</h2>
+    <p>Mecánicos certificados con más de 20 años de experiencia. Trabajamos con honestidad, rapidez y precios justos.</p>
+    <div class="mision-vision">
+      <div><h3>Misión</h3><p>Brindar servicios de calidad con atención personalizada.</p></div>
+      <div><h3>Visión</h3><p>Ser el taller líder en servicio y confianza en la región.</p></div>
+    </div>
+    <div class="valores">
+      <h3>Valores</h3>
+      <ul>
+        <li>✔ Honestidad</li>
+        <li>✔ Responsabilidad</li>
+        <li>✔ Compromiso</li>
+        <li>✔ Puntualidad</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="citas" class="citas">
+    <h2>Agenda tu cita</h2>
+    <form id="citaForm">
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <input type="date" id="fecha" required />
+      <input type="time" id="hora" required />
+      <textarea id="detalle" placeholder="Describe el servicio requerido" required></textarea>
+      <button type="submit">Reservar</button>
+    </form>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Blvrd Coacalco 715, Villa de las Flores, 55710 San Francisco Coacalco, Méx.</p>
+    <p>📞 +52 55 5555 5555</p>
+    <p>✉ contacto@tallermecanico.com</p>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8990.336944928278!2d-99.1014413585388!3d19.657935640286485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f3859718db65%3A0x1217226b99b87ebb!2sService%20Center%20Coacalco!5e0!3m2!1ses!2smx!4v1751476754752!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 romoSports. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
